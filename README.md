@@ -21,7 +21,8 @@ The features list goes like this:
 * Interface for the Moon Phase program
 * …Get the date for the closest moon phase quarter
 * And more…
-* When you start ASTRO, it asks for the Longitude (LO), Latitude (LA), the Date (DT) and the Local Time (L.T) as well as the adjustment to Universal Time (UT). 
+
+When you start ASTRO, it asks for the Longitude (LO), Latitude (LA), the Date (DT) and the Local Time (L.T) as well as the adjustment to Universal Time (UT). 
 The program prompts with the suggestion of the value it has previously stored. It then displays a menu corresponding to the top row of menu keys (A-E):
 
 **__B E:A RS M ST__**
@@ -34,14 +35,14 @@ As you may guess, the first two items correspond to labels "a" and "b" while the
 
 Pressing R/S successively gives you the explanation for the menu items (A-E,a,b and e):
 
-B = BODY
-E:A = EQ->AZ
-RS = RISE,TR,SET
-M = MOON PHASE
-ST = SAT:JU,SA,UR
-D/T = NEW DT,TM
-A:E = AZ->EQ
-MNU = MENU
+B = BODY<br>
+E:A = EQ->AZ<br>
+RS = RISE,TR,SET<br>
+M = MOON PHASE<br>
+ST = SAT:JU,SA,UR<br>
+D/T = NEW DT,TM<br>
+A:E = AZ->EQ<br>
+MNU = MENU<br>
 
 Here is the full explanation:
 
