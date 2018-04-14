@@ -60,3 +60,6 @@ LBL e (MNU)	|Back to the main menu.
 
 The program includes two utilities, the "D-YMD" that converts a date from your normal format (DD.MMYYYY or MM.DDYYYY) to the format YYYY.MMDD that is used by most of the ASTRO2010 module. The second utility program, the "YMD-D" reverses the conversion. At the end of the program listing you will also find the program "DMD" that is called from witin the ASTRO program. It converts between a the date formats DD.MMYYYY and MM.DDYYYY.
 
+## License
+This software is released into the Public Domain.
+
