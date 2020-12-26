@@ -1,7 +1,7 @@
 # hp-41_astro
 ## HP-41: A user interface for the ASTRO2010 module
 
-The ASTRO2010 module is a collection of astronomy programs by Jean-Marc Baillard (such as the "Astronomical Ephemeris for the HP41"). It’s an excellent module for astronomy enthisiasts and a valuable tool when I am out scouting the sky with my telescope.
+The ASTRO2010 module is a collection of astronomy programs by [Jean-Marc Baillard](http://hp41programs.yolasite.com/) (such as the "Astronomical Ephemeris for the HP41"). It’s an excellent module for astronomy enthisiasts and a valuable tool when I am out scouting the sky with my telescope.
 
 While the ASTRO2010 module is a stroke of genius, it is lacking a simple user interface. Without my ASTRO user interface program you would have to rely on the user manual or have an elephant’s memory. This ASTRO program delivers to the user a menu driven easy-to-use interface bringing the top amateur astronomy programs into one complete program.
 
