@@ -1,4 +1,10 @@
 # hp-41_astro
+
+[![HP-41](https://img.shields.io/badge/HP--41-Calculator-orange)](https://en.wikipedia.org/wiki/HP-41C)
+[![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
+[![GitHub stars](https://img.shields.io/github/stars/isene/hp-41_astro.svg)](https://github.com/isene/hp-41_astro/stargazers)
+[![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
+
 ## HP-41: A user interface for the ASTRO2010 module
 
 The ASTRO2010 module is a collection of astronomy programs by [Jean-Marc Baillard](http://hp41programs.yolasite.com/) (such as the "Astronomical Ephemeris for the HP41"). It’s an excellent module for astronomy enthisiasts and a valuable tool when I am out scouting the sky with my telescope.
