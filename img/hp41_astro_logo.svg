@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with deep space -->
+  <rect x="0" y="0" width="200" height="200" fill="#0a0a1a"/>
+  
+  <!-- Stars and nebula -->
+  <g fill="#fff" opacity="0.8">
+    <circle cx="30" cy="25" r="1"/>
+    <circle cx="170" cy="30" r="0.5"/>
+    <circle cx="180" cy="60" r="1"/>
+    <circle cx="25" cy="80" r="0.5"/>
+    <circle cx="190" cy="90" r="1"/>
+    <circle cx="20" cy="130" r="0.5"/>
+    <circle cx="175" cy="140" r="1"/>
+    <circle cx="35" cy="170" r="0.5"/>
+    <circle cx="160" cy="180" r="1"/>
+  </g>
+  
+  <!-- Nebula glow -->
+  <circle cx="170" cy="50" r="20" fill="#4a90e2" opacity="0.1">
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="20;25;20" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- HP-41 Calculator -->
+  <g transform="translate(100, 105)">
+    <!-- Calculator body -->
+    <rect x="-45" y="-55" width="90" height="130" rx="8" fill="#2c2c2c" stroke="#444" stroke-width="2"/>
+    
+    <!-- LCD Display -->
+    <rect x="-40" y="-45" width="80" height="20" rx="3" fill="#0a4d0a" stroke="#333" stroke-width="1"/>
+    <text x="0" y="-32" font-family="monospace" font-size="9" fill="#00ff00" text-anchor="middle">ASTRO2010 UI</text>
+    
+    <!-- Menu indicator -->
+    <rect x="-38" y="-20" width="76" height="25" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="2"/>
+    
+    <!-- Menu items with scrolling animation -->
+    <g font-family="monospace" font-size="6" fill="#00ff00">
+      <g>
+        <animate attributeName="transform" type="translate" values="0,0;0,-30;0,0" dur="6s" repeatCount="indefinite"/>
+        <text x="-35" y="-10">1: Planet Positions</text>
+        <text x="-35" y="-5">2: Moon Phase</text>
+        <text x="-35" y="0">3: Star Charts</text>
+        <text x="-35" y="5">4: Eclipses</text>
+        <text x="-35" y="10">5: Precession</text>
+        <text x="-35" y="15">6: Time Conversion</text>
+      </g>
+    </g>
+    
+    <!-- Selection indicator -->
+    <rect x="-38" y="-12" width="76" height="8" fill="none" stroke="#ffff00" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Keyboard -->
+    <g fill="#1a1a1a" stroke="#666" stroke-width="0.5">
+      <!-- Top row -->
+      <rect x="-35" y="15" width="12" height="8" rx="1"/>
+      <rect x="-20" y="15" width="12" height="8" rx="1"/>
+      <rect x="-5" y="15" width="12" height="8" rx="1"/>
+      <rect x="10" y="15" width="12" height="8" rx="1"/>
+      <rect x="25" y="15" width="12" height="8" rx="1"/>
+      
+      <!-- Second row -->
+      <rect x="-35" y="25" width="12" height="8" rx="1"/>
+      <rect x="-20" y="25" width="12" height="8" rx="1"/>
+      <rect x="-5" y="25" width="12" height="8" rx="1"/>
+      <rect x="10" y="25" width="12" height="8" rx="1"/>
+      <rect x="25" y="25" width="12" height="8" rx="1"/>
+      
+      <!-- Third row -->
+      <rect x="-35" y="35" width="12" height="8" rx="1"/>
+      <rect x="-20" y="35" width="12" height="8" rx="1"/>
+      <rect x="-5" y="35" width="12" height="8" rx="1"/>
+      <rect x="10" y="35" width="12" height="8" rx="1"/>
+      <rect x="25" y="35" width="12" height="8" rx="1"/>
+    </g>
+    
+    <!-- Key labels -->
+    <g font-family="monospace" font-size="4" fill="#fff" text-anchor="middle">
+      <text x="-29" y="21">Σ+</text>
+      <text x="-14" y="21">7</text>
+      <text x="1" y="21">8</text>
+      <text x="16" y="21">9</text>
+      <text x="31" y="21">÷</text>
+      
+      <text x="-29" y="31">1/x</text>
+      <text x="-14" y="31">4</text>
+      <text x="1" y="31">5</text>
+      <text x="16" y="31">6</text>
+      <text x="31" y="31">×</text>
+    </g>
+  </g>
+  
+  <!-- Astronomical objects -->
+  <!-- Sun -->
+  <circle cx="40" cy="40" r="8" fill="#ffd700">
+    <animate attributeName="r" values="8;10;8" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Planets in orbit -->
+  <g transform="translate(40, 40)">
+    <!-- Mercury -->
+    <circle cx="15" cy="0" r="1.5" fill="#8c7853">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Venus -->
+    <circle cx="22" cy="0" r="2" fill="#ffc649">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Mars -->
+    <circle cx="30" cy="0" r="1.8" fill="#cd5c5c">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Moon phases -->
+  <g transform="translate(160, 40)">
+    <circle cx="0" cy="0" r="6" fill="#ddd"/>
+    <path d="M -6,0 A 6,6 0 0,1 6,0 A 3,3 0 0,0 -6,0" fill="#333">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Telescope -->
+  <g transform="translate(50, 160)" opacity="0.6">
+    <line x1="0" y1="0" x2="30" y2="-20" stroke="#666" stroke-width="4"/>
+    <circle cx="30" cy="-20" r="5" fill="#666"/>
+    <circle cx="0" cy="0" r="3" fill="#666"/>
+    <line x1="15" y1="-10" x2="15" y2="5" stroke="#666" stroke-width="2"/>
+    <line x1="10" y1="5" x2="20" y2="5" stroke="#666" stroke-width="2"/>
+  </g>
+  
+  <!-- ASTRO2010 module indicator -->
+  <g transform="translate(150, 160)">
+    <rect x="0" y="0" width="40" height="20" fill="#333" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="20" y="8" font-family="monospace" font-size="6" fill="#fff" text-anchor="middle">ASTRO</text>
+    <text x="20" y="16" font-family="monospace" font-size="6" fill="#fff" text-anchor="middle">2010</text>
+    
+    <!-- Module connection indicator -->
+    <circle cx="0" cy="10" r="2" fill="#00ff00">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Data flow animation -->
+  <g opacity="0.7">
+    <path d="M 150,160 Q 125,140 100,120" stroke="#00ff00" stroke-width="2" fill="none" stroke-dasharray="5,3">
+      <animate attributeName="stroke-dashoffset" values="0;16" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="190" font-family="monospace" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">HP-41 Astro</text>
+  <text x="100" y="202" font-family="monospace" font-size="9" fill="#888" text-anchor="middle">ASTRO2010 User Interface</text>
+</svg>
